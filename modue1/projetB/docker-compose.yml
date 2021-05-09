@@ -49,6 +49,8 @@ services:
           PMA_HOST: mysql
         links:
             - mysql
+        networks:
+        - R_projetA
 networks:
     R_projetA:
       driver: bridge
